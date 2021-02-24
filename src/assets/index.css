@@ -1,0 +1,354 @@
+:root {
+    --ct1: #161d6f;
+    --ct2: #98ded9;
+    --ct3: #c7ffd8;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: unset;
+}
+
+.f-white {
+    color: white;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.g-ol {
+    color: red;
+}
+
+div {
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+p.caption {
+    font-size: 12px;
+}
+
+p.error {
+    font-size: 12px;
+    color: red;
+}
+
+.p-36 {
+    padding: 36px;
+}
+
+.pt-3 {
+    padding-top: 18px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-120 {
+    width: 220px;
+}
+
+.bg-grey {
+    background-color: grey;
+}
+
+.bg-orange {
+    background-color: orangered;
+}
+
+.border_grey {
+    border: 1px solid grey;
+    border-radius: 16px;
+}
+
+select,
+input {
+    border: unset;
+    border-bottom: 1px solid grey;
+    padding: 0;
+    height: 24px;
+}
+
+select:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input:focus {
+    outline: unset;
+    border-color: var(--ct1);
+}
+
+button {
+    min-width: 120px;
+    height: 36px;
+    border-radius: 8px;
+    border: unset;
+    background-color: var(--ct1);
+    color: white;
+    padding: 0;
+}
+
+.h24 {
+    height: 24px;
+}
+
+.modal_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* z-index: 9; */
+}
+
+.modal_inner {
+    display: flex;
+    /* margin: 20%; */
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.app_nav {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* margin-right: 50vw; */
+    background-color: var(--ct1);
+    padding: 0 10vw;
+}
+
+.app_nav .langSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: flex-end;
+    /* margin-right: 50vw; */
+    background-color: var(--ct1);
+    color: white;
+}
+
+.app_nav .navGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: flex-start;
+    /* margin-right: 50vw; */
+    background-color: var(--ct1);
+}
+
+.app_nav a {
+    text-decoration: unset;
+    color: black;
+}
+
+.app_nav .nav_menu {
+    width: 124px;
+    height: 36px;
+    padding: unset;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    border-bottom: 10px solid var(--ct1);
+    color: white;
+    padding-top: 10px;
+}
+
+.app_nav .nav_menu:hover {
+    border-bottom: 10px solid var(--ct2);
+}
+
+.cropper_container {
+    /* position: relative; */
+    /* top: 200px; */
+    height: 250px;
+    width: 100vw;
+    background-color: teal;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.test-flex {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 300px;
+    flex-direction: column;
+}
+
+.test-flex {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.test-flex * {
+    /* flex: 1; */
+    /* min-height: -webkit-min-content; */
+}
+
+.vw-200 {
+    min-width: 200px;
+    min-height: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.fh-left {
+    justify-content: flex-start;
+}
+
+.fh-right {
+    justify-content: flex-end;
+}
+
+.fv-left {
+    align-content: center;
+}
+
+.fv-right {
+    align-content: flex-start;
+}
+
+.fh-overflowx-scroll {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+.g16 {
+    gap: 16px;
+}
+
+.g8 {
+    gap: 8px;
+}
+
+
+/* 
+
+
+.img_sq_80 {
+    width: 80px;
+    height: 80px;
+}
+
+*/
+
+.page_header {
+    height: 100px;
+    background-color: unset;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.page_content {
+    margin: 40px 10vw;
+}
+
+.wm-600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.py-3 {
+    margin: 8px 0;
+}
+
+.app-button {
+    background-color: grey;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.self_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal_card {
+    background-color: white;
+    padding: 64px;
+    border-radius: 16px;
+    height: 600px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal_card * {
+    width: 100%;
+}
+
+.btn-modal-close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+.btn-modal-close:focus-within {
+    color: yellow;
+}
+
+.btn-modal-close::after {
+    display: inline-block;
+    content: "X";
+}
+
+.btn-modal-close::after:focus {
+    color: yellow;
+}

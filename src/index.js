@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./assets/index.css";
+import "./css.css";
+
+import { BrowserRouter } from "react-router-dom";
+import { StylesProvider } from "@material-ui/core/styles";
+import AppRoute from "route/route";
+
+import reportWebVitals from "./reportWebVitals";
+import ContextProvider from "contextProvider/contextProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ContextProvider>
+      <BrowserRouter>
+        <StylesProvider injectFirst>
+          <AppRoute />
+        </StylesProvider>
+      </BrowserRouter>
+    </ContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

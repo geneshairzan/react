@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: max-content;
+    min-height: 100%;
+    padding: 10px 0px;
+    overflow-y: hidden;
+}
+
+.container * {
+    flex-shrink: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.cardBodyContainer {
+    width: calc(100% - 16px);
+    height: 64px;
+    /* background-color: grey; */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cardBodyContainer.active {
+    height: 220px;
+    background-color: orangered;
+    color: white;
+}
+
+.cardBodyContainer.active h1 {
+    color: white;
+}
+
+.cardBody {
+    padding-left: 48px;
+}
+
+.cardBody h1 {
+    font-size: 1.5em;
+}
+
+.cardBody p {
+    font-size: 0.8em;
+    width: 80%;
+    color: white;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    /* height: 3px; */
+    height: 64px;
+    width: 8px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.square::before {
+    /* height: 3px; */
+    width: 16px;
+    height: 32px;
+    background-color: orangered;
+    display: block;
+    content: "";
+    top: 16px;
+    left: 32px;
+    position: relative;
+    z-index: 9;
+    border-radius: 4px;
+}
+
+.square.active {
+    background-color: orangered;
+}
+
+.square.active.current {
+    height: 220px;
+}
+
+.shadow1 {
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 5px 0 rgb(167 167 167 / 16%);
+    -moz-box-shadow: 0 5px 5px 0 rgba(167, 167, 167, 0.16);
+}
+
+.ease {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+    }
+    .card {
+        width: 280px;
+        flex-direction: column;
+    }
+    .cardBodyContainer {
+        width: 100%;
+    }
+    .cardBody {
+        /* padding-left: 0; */
+    }
+    .square {
+        width: 100%;
+        height: 8px;
+        margin: 8px 0;
+    }
+    .square.active.current {
+        height: 8px;
+    }
+    .square::before {
+        width: 16px;
+        height: 16px;
+        top: 32px;
+        left: 16px;
+    }
+}

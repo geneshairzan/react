@@ -1,21 +1,61 @@
 {
-    "name": "react_test",
-    "version": "0.1.0",
-    "private": true,
-    "homepage": "http://react.alphadsign.com",
+    "name": "genesha_testnpm",
+    "version": "1.1.0",
+    "private": false,
+    "homepage": "http://cnc.alphadsign.com/",
+
     "dependencies": {
+        "@material-ui/core": "^4.11.3",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.57",
         "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
-        "@testing-library/user-event": "^12.1.10",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.7.3",
+        "axios": "^0.21.1",
+        "axios-hooks": "^2.3.0",
+        "genesha_reactv1": "^1.1.0",
+        "get-orientation": "^1.1.2",
+        "i18next": "^19.9.0",
+        "i18next-browser-languagedetector": "^6.0.1",
+        "i18next-http-backend": "^1.1.0",
+        "i18next-xhr-backend": "^3.2.2",
+        "mui-datatables": "^3.7.6",
+        "node-sass": "^4.14.1",
+        "npm-watch": "^0.7.0",
         "react": "^17.0.1",
+        "react-data-table-component": "^7.0.0-alpha-8",
         "react-dom": "^17.0.1",
+        "react-easy-crop": "^3.3.1",
+        "react-hook-form": "^6.15.4",
+        "react-i18next": "^11.8.8",
+        "react-image-crop": "^8.6.6",
+        "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.1",
+        "react_test2_npmpakage": "^0.1.0",
+        "styled-components": "^5.2.1",
+        "swiper": "^6.4.15",
+        "use-state-with-callback": "^2.0.3",
         "web-vitals": "^0.2.4"
+    },
+    "watch": {
+        "test": {
+            "patterns": [
+                "src",
+                "test"
+            ],
+            "extensions": "js,jsx",
+            "ignore": "src/vendor/external.min.js",
+            "quiet": true,
+            "legacyWatch": true,
+            "delay": 1000,
+            "runOnChangeOnly": false
+        }
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
+        "watch": "npm-watch",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {

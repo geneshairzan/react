@@ -1,0 +1,66 @@
+.mt-16 {
+    margin-top: 16px;
+}
+
+.my-16 {
+    margin: 16px 0;
+}
+
+.child-my-8 * {
+    margin: 8px 0;
+}
+
+.dnone {
+    display: none;
+}
+
+.img_sq_60 {
+    width: 120px;
+    height: 120px;
+}
+
+
+/* FLEX MODIFIER */
+
+.fh-start {
+    justify-content: flex-start;
+}
+
+.fh-end {
+    justify-content: flex-end;
+}
+
+.fh-even {
+    justify-content: space-evenly;
+}
+
+.fv-venter {
+    align-items: center;
+}
+
+.lang_active {
+    color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #272c34;
+    margin: 0;
+    margin-top: 16px;
+}
+
+p {
+    padding-top: 16px;
+    color: grey;
+}
+
+p.subtitle {
+    line-height: 1.6;
+}
+
+.text-center {
+    text-align: center;
+}
