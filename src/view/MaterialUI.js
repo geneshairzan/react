@@ -5,7 +5,7 @@ import { Steps } from "component/react-step-flow";
 
 export default function App() {
   return (
-    <div title="home">
+    <AppLayout title="home">
       <Steps setActive={1}>
         <div>
           <h1>this is title</h1>
@@ -35,6 +35,6 @@ export default function App() {
           </p>
         </div>
       </Steps>
-    </div>
+    </AppLayout>
   );
 }
